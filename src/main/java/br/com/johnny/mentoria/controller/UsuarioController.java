@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/usuarios")
 @Tag(name = "Usuários")
+@CrossOrigin("*")    
 public class UsuarioController extends BaseCrudController<Integer, UsuarioRequest, UsuarioResponse> {
 
     public UsuarioController(UsuarioService service) {
