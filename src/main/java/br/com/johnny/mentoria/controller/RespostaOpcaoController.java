@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/respostas-opcao")
 @Tag(name = "Respostas de opção")
+@CrossOrigin("*")    
 public class RespostaOpcaoController extends BaseCrudController<Integer, RespostaOpcaoRequest, RespostaOpcaoResponse> {
 
     public RespostaOpcaoController(RespostaOpcaoService service) {
