@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/respostas-publicacoes")
 @Tag(name = "Respostas de publicações")
+@CrossOrigin("*")
 public class RespostaPublicacaoController extends BaseCrudController<Integer, RespostaPublicacaoRequest, RespostaPublicacaoResponse> {
 
     public RespostaPublicacaoController(RespostaPublicacaoService service) {
