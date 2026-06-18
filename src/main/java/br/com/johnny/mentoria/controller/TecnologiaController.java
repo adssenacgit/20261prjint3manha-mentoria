@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/tecnologias")
 @Tag(name = "Tecnologias")
+@CrossOrigin("*")    
 public class TecnologiaController extends BaseCrudController<Integer, TecnologiaRequest, TecnologiaResponse> {
 
     public TecnologiaController(TecnologiaService service) {
