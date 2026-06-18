@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/mentores")
 @Tag(name = "Mentores")
+@CrossOrigin("*")    
 public class MentorController extends BaseCrudController<Integer, MentorRequest, MentorResponse> {
 
     public MentorController(MentorService service) {
