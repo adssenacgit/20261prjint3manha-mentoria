@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/respostas-texto")
 @Tag(name = "Respostas de texto")
+@CrossOrigin("*")    
 public class RespostaTextoController extends BaseCrudController<Integer, RespostaTextoRequest, RespostaTextoResponse> {
 
     public RespostaTextoController(RespostaTextoService service) {
