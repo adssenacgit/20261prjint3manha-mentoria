@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/avaliacoes")
 @Tag(name = "Avaliações")
+@CrossOrigin("*")
 public class AvaliacaoController extends BaseCrudController<Integer, AvaliacaoRequest, AvaliacaoResponse> {
 
     public AvaliacaoController(AvaliacaoService service) {
