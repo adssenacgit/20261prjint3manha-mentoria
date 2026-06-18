@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/perguntas-cadastro")
 @Tag(name = "Perguntas de cadastro")
+@CrossOrigin("*")
 public class PerguntaCadastroController extends BaseCrudController<Integer, PerguntaCadastroRequest, PerguntaCadastroResponse> {
 
     public PerguntaCadastroController(PerguntaCadastroService service) {
