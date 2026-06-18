@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/usuarios-tecnologias")
 @Tag(name = "Usuários tecnologias")
+@CrossOrigin("*")    
 public class UsuarioTecnologiaController {
 
     private final UsuarioTecnologiaService service;
