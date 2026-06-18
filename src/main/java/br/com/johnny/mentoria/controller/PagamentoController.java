@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/pagamentos")
 @Tag(name = "Pagamentos")
+@CrossOrigin("*")    
 public class PagamentoController extends BaseCrudController<Integer, PagamentoRequest, PagamentoResponse> {
 
     public PagamentoController(PagamentoService service) {
