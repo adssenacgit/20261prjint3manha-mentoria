@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/clientes")
 @Tag(name = "Clientes")
+@CrossOrigin("*")
 public class ClienteController extends BaseCrudController<Integer, ClienteRequest, ClienteResponse> {
 
     public ClienteController(ClienteService service) {
