@@ -43,6 +43,6 @@ public class MentorService extends BaseCrudService<Mentor, Integer, MentorReques
 
     @Override
     protected MentorResponse toResponse(Mentor mentor) {
-        return new MentorResponse(mentor.getUsuarioId(), mentor.getDescricao(), mentor.getPrecoHora(), mentor.getMediaAvaliacao(), mentor.getStatus());
+        return new MentorResponse(mentor.getUsuarioId(), mentor.getDescricao(), mentor.getPrecoHora(), mentor.getMediaAvaliacao(), mentor.getOnboardingConcluido(), mentor.getStatus());
     }
 }

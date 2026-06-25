@@ -7,6 +7,7 @@ public record ClienteRequest(
         @Size(max = 45) String stack,
         @Size(max = 200) String descricao,
         @NotNull Integer usuarioId,
+        Byte onboardingConcluido,
         Byte status
 ) {
 }

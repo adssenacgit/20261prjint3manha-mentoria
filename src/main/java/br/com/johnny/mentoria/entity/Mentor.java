@@ -32,6 +32,9 @@ public class Mentor implements SoftDeletable {
     @JoinColumn(name = "usuario_id")
     private Usuario usuario;
 
+    @Column(name = "mentor_onboarding_concluido", nullable = false)
+    private Byte onboardingConcluido ;
+
     @Column(name = "mentor_status", nullable = false)
     private Byte status = StatusConstants.ATIVO;
 
@@ -78,6 +81,14 @@ public class Mentor implements SoftDeletable {
 
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
+    }
+
+    public Byte getOnboardingConcluido() {
+        return onboardingConcluido;
+    }
+
+    public void setOnboardingConcluido(Byte onboardingConcluido) {
+        this.onboardingConcluido = onboardingConcluido;
     }
 
     @Override

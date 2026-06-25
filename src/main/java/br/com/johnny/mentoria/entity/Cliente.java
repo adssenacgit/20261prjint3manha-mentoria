@@ -29,6 +29,9 @@ public class Cliente implements SoftDeletable {
     @JoinColumn(name = "usuario_id")
     private Usuario usuario;
 
+    @Column(name = "cliente_onboarding_concluido", nullable = false)
+    private Byte onboardingConcluido;
+
     @Column(name = "cliente_status", nullable = false)
     private Byte status = StatusConstants.ATIVO;
 
@@ -67,6 +70,14 @@ public class Cliente implements SoftDeletable {
 
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
+    }
+
+    public Byte getOnboardingConcluido() {
+        return onboardingConcluido;
+    }
+
+    public void setOnboardingConcluido(Byte onboardingConcluido) {
+        this.onboardingConcluido = onboardingConcluido;
     }
 
     @Override

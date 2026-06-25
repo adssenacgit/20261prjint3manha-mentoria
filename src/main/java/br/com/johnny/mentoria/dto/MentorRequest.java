@@ -8,6 +8,7 @@ public record MentorRequest(
         Double precoHora,
         Double mediaAvaliacao,
         @NotNull Integer usuarioId,
+        Byte onboardingConcluido,
         Byte status
 ) {
 }

@@ -5,6 +5,7 @@ public record MentorResponse(
         String descricao,
         Double precoHora,
         Double mediaAvaliacao,
+        Byte onboardingConcluido,
         Byte status
 ) {
 }

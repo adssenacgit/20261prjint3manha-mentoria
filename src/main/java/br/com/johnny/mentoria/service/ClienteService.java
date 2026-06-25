@@ -42,6 +42,6 @@ public class ClienteService extends BaseCrudService<Cliente, Integer, ClienteReq
 
     @Override
     protected ClienteResponse toResponse(Cliente cliente) {
-        return new ClienteResponse(cliente.getUsuarioId(), cliente.getStack(), cliente.getDescricao(), cliente.getStatus());
+        return new ClienteResponse(cliente.getUsuarioId(), cliente.getStack(), cliente.getDescricao(), cliente.getOnboardingConcluido(),cliente.getStatus());
     }
 }
