@@ -38,6 +38,7 @@ public class MentorService extends BaseCrudService<Mentor, Integer, MentorReques
         mentor.setDescricao(request.descricao());
         mentor.setPrecoHora(request.precoHora());
         mentor.setMediaAvaliacao(request.mediaAvaliacao());
+        mentor.setOnboardingConcluido(request.onboardingConcluido());
         if (request.status() != null) mentor.setStatus(request.status());
     }
 

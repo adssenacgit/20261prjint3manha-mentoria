@@ -37,6 +37,7 @@ public class ClienteService extends BaseCrudService<Cliente, Integer, ClienteReq
         cliente.setUsuario(usuario);
         cliente.setStack(request.stack());
         cliente.setDescricao(request.descricao());
+        cliente.setOnboardingConcluido(request.onboardingConcluido());
         if (request.status() != null) cliente.setStatus(request.status());
     }
 
